@@ -1,0 +1,18 @@
+# Python
+.venv/
+__pycache__/
+*.pyc
+.pytest_cache/
+.ipynb_checkpoints/
+
+# Data: NEVER commit raw video, faces, or processed landmarks (see CLAUDE.md rule 2)
+data/raw/
+data/processed/
+*.mp4
+*.mov
+*.avi
+*.jpg
+*.png
+
+# Downloaded MediaPipe model bundles (fetched by src/download_models.py)
+models/*.task

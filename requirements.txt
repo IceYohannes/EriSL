@@ -1,0 +1,8 @@
+# Python 3.11. Pinned per CLAUDE.md rule 4. Top-level deps only; pip resolves the rest.
+mediapipe==1.2.0
+opencv-python==5.0.0.93
+numpy==2.4.6
+pandas==3.1.0
+scikit-learn==1.9.1
+pytest==9.2.0
+# tensorflow: added at M3 (large download, install on approval)
