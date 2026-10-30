@@ -5,4 +5,5 @@ numpy==2.4.6
 pandas==3.1.0
 scikit-learn==1.9.1
 pytest==9.2.0
+matplotlib==3.11.2
 # tensorflow: added at M3 (large download, install on approval)

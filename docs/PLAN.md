@@ -60,8 +60,8 @@ Done when: you record 3 signs x 10 reps, and metadata.csv has 30 correct rows.
 
 Done when: all 30 test clips extract; quality report flags no clip with < 80 % hand detection.
 
-### Step 4: Sanity check notebook (`notebooks/01_inspect.ipynb`)
-- Plot normalized trajectories per sign; quick kNN on the 3 signs (should be near 100 %
+### Step 4: Sanity check (`src/inspect_clips.py`) ✅ code done, awaiting real clips
+- Plots normalized fingertip trajectories per sign + runs the baselines (should be near 100 %
   signer-dependent; it's just a pipeline check, not a result).
 
 ---
@@ -73,8 +73,8 @@ Done when: all 30 test clips extract; quality report flags no clip with < 80 % h
 - Re-run extraction + quality report after each session; re-record bad clips while the signer is there.
 
 ## M3: Models + evaluation (week 7)
-- `src/dataset.py`: load windows + labels + signer ids; **split by signer** (leave-one-signer-out).
-- Baselines: kNN and MLP on flattened `(30,142)` windows (scikit-learn).
+- ✅ `src/dataset.py`: load windows + labels + signer ids; **split by signer** (leave-one-signer-out).
+- ✅ `src/baseline.py`: kNN and MLP on flattened `(30,142)` windows (scikit-learn).
 - GRU (TensorFlow, install at this point): 2 layers x 64-128 units + softmax; augmentation
   (rotation, scale jitter, speed change, noise).
 - `src/evaluate.py`: confusion matrix, per-sign and per-signer accuracy; report **both**
