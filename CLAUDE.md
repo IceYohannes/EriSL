@@ -69,4 +69,5 @@ ersl/
 - M5: write-up / dataset release plan (with signer consent).
 
 ## Current status
-M0 done (pending visual check). M1 code done (features, collect, extract); next: record 3 test letters. See `docs/PLAN.md`.
+M0 done. M1 code done (features, collect, import_videos, extract); test letters chosen (ገ ረ ተ);
+next: record/import 10 reps each. See `docs/PLAN.md`.

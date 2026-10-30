@@ -13,10 +13,10 @@ Do not add, invent, or rename signs here without validation by Deaf Eritrean sig
 ## Test signs (M1 pipeline check only, NOT part of the dataset)
 
 Three fingerspelled letters recorded by Isaias to test collect -> extract -> features.
-Replace `test_letter_1..3` with the actual letters (e.g. `test_letter_xx`) before recording.
+Labels are the ASCII transliteration of the Ge'ez letter (folder names must be ASCII).
 
 | label | letter | note |
 |-------|--------|------|
-| test_letter_1 | ? | fill in |
-| test_letter_2 | ? | fill in |
-| test_letter_3 | ? | fill in |
+| test_letter_ge | ገ | chosen by Isaias, 2026-10-30 |
+| test_letter_re | ረ | chosen by Isaias, 2026-10-30 |
+| test_letter_te | ተ | chosen by Isaias, 2026-10-30 |

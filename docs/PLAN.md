@@ -5,12 +5,12 @@ Living plan. Milestones come from CLAUDE.md; this file breaks them into concrete
 
 ---
 
-## M0: Environment + live overlay (done, pending your visual check)
+## M0: Environment + live overlay ✅ done
 - [x] venv, pinned `requirements.txt`, `.gitignore`, git repo
 - [x] `src/landmarks.py`: shared Hand + Pose Landmarker wrapper
 - [x] `src/live_overlay.py`: webcam preview
-- [ ] You run `python -m src.live_overlay` and confirm tracking looks right
-- [ ] Push to private GitHub repo (needs `gh auth login`)
+- [x] You run `python -m src.live_overlay` and confirm tracking looks right (2026-10-30)
+- [x] Push to GitHub (github.com/IceYohannes/EriSL; confirm it is private)
 
 ---
 
@@ -95,6 +95,5 @@ Done when: all 30 test clips extract; quality report flags no clip with < 80 % h
 
 ## Open decisions (need your answer)
 1. ~~dominant_hand column~~: **decided yes** (added).
-2. **Test sign labels for M1:** 3 alphabet letters (decided); which letters? Fill in `docs/signs.md`. They get
-   `test_` prefixes until validated.
+2. ~~Test sign labels for M1~~: **decided** ገ, ረ, ተ -> `test_letter_ge`, `test_letter_re`, `test_letter_te`.
 3. ~~Clip length~~: **decided fixed 2 s**.
