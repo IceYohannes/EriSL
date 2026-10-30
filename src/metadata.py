@@ -44,6 +44,12 @@ def append_metadata(row: dict, path: Path = METADATA_CSV) -> None:
         writer.writerow({c: row[c] for c in COLUMNS})
 
 
+def confirm_consent(signer: str) -> bool:
+    answer = input(f"Has signer '{signer}' given informed consent to be recorded "
+                   f"for this project? Type 'yes' to continue: ")
+    return answer.strip().lower() == "yes"
+
+
 def clip_path(signer_id: str, sign_label: str, rep: int, root: Path = RAW_DIR) -> Path:
     return root / signer_id / sign_label / f"{rep:03d}.mp4"
 

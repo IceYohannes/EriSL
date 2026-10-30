@@ -19,7 +19,7 @@ import numpy as np
 
 from src.landmarks import LandmarkExtractor
 from src.live_overlay import draw
-from src.metadata import allowed_signs, append_metadata, clip_path, next_rep
+from src.metadata import allowed_signs, append_metadata, clip_path, confirm_consent, next_rep
 
 COUNTDOWN_S = 3
 CLIP_S = 2.0
@@ -116,12 +116,6 @@ def save_clip(frames: list[np.ndarray], fps: float, path) -> None:
     for f in frames:
         writer.write(f)
     writer.release()
-
-
-def confirm_consent(signer: str) -> bool:
-    answer = input(f"Has signer '{signer}' given informed consent to be recorded "
-                   f"for this project? Type 'yes' to continue: ")
-    return answer.strip().lower() == "yes"
 
 
 def main() -> None:

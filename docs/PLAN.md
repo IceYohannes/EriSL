@@ -52,6 +52,10 @@ the Kotlin port can be checked against exactly the same numbers.
 
 Done when: you record 3 signs x 10 reps, and metadata.csv has 30 correct rows.
 
+Alternative: `src/import_videos.py` ✅ imports clips already recorded on a phone (one file = one
+rep; re-encoded to .mp4, max 1280 px; same consent + signs.md checks; originals untouched):
+`python -m src.import_videos --signer s01 --sign test_letter_1 --dominant-hand right --device pixel7_back --lighting indoor_day <folder>`
+
 ### Step 3: Extraction (`src/extract.py`) ✅ code done, awaiting real clips
 - Walks `data/raw/videos`, skips anything without consent, runs `LandmarkExtractor` frame by frame
   (timestamps from the video's FPS), saves raw per-frame arrays to `data/processed/<signer>/<sign>/<rep>.npz`.
