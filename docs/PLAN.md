@@ -91,8 +91,6 @@ Done when: all 30 test clips extract; quality report flags no clip with < 80 % h
 
 ## Open decisions (need your answer)
 1. ~~dominant_hand column~~: **decided yes** (added).
-   Proposal: yes, values `right` / `left`.
 2. **Test sign labels for M1:** 3 alphabet letters (decided); which letters? Fill in `docs/signs.md`. They get
-   `test_` prefixes in `docs/signs.md`.
+   `test_` prefixes until validated.
 3. ~~Clip length~~: **decided fixed 2 s**.
-   Proposal: fixed 2 s for isolated signs.
