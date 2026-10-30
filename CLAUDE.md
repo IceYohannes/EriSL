@@ -23,7 +23,7 @@ ersl/
   data/
     raw/videos/<signer_id>/<sign_label>/<rep>.mp4   # NEVER commit (gitignored)
     processed/                                       # landmark .npy sequences (gitignored)
-    metadata.csv      # signer_id, sign_label, rep, device, lighting, date, consent_ok
+    metadata.csv      # signer_id, sign_label, rep, device, lighting, date, consent_ok, dominant_hand
   src/
     collect.py        # webcam/phone recording helper with countdown + labels
     extract.py        # video -> landmark sequence (.npy) via MediaPipe
@@ -69,4 +69,4 @@ ersl/
 - M5: write-up / dataset release plan (with signer consent).
 
 ## Current status
-M0 in progress: skeleton, pinned deps, live landmark overlay (`src/live_overlay.py`).
+M0 done (pending visual check). M1 code done (features, collect, extract); next: record 3 test letters. See `docs/PLAN.md`.
