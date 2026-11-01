@@ -73,6 +73,8 @@ Done when: all 30 test clips extract; quality report flags no clip with < 80 % h
 ## M2: Dataset collection (weeks 3-6, with community partners)
 - Get the sign list validated by Deaf Eritrean signers -> fill `docs/signs.md` (20-30 signs).
 - Consent form (Tigrinya + English) and process; record signer id, dominant hand, device, lighting.
+  Draft v0.1 (English, placeholders): https://claude.ai/artifact/MU1ywHt3wogwXjUGReE6n7. Needs partner review,
+  human Tigrinya translation, ErSL explanation by an interpreter. Track choices B-F per signer before M5.
 - Target: 20-30 signs x 3+ signers x 10-20 reps. Vary lighting, background, distance, device.
 - Re-run extraction + quality report after each session; re-record bad clips while the signer is there.
 
